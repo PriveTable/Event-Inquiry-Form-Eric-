@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style.css">
+	<!-- BOOT STRAP -->
+	<!-- JQuery -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<!-- Latest compiled and minified CSS -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+	<!-- Optional theme -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+	<!-- Latest compiled and minified JavaScript -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+	<div class="nav">nav</div>
+	<div class="header">header</div>
+		<div class="subheaders">
+			<div class="subheader">
+
+			<div class="progressContainer">
+				<div class="circle">1</div>
+				<div class="line"></div>
+				<div class="circle">2</div>
+				<div class="line"></div>
+				<div class="circle">3</div>
+			</div>
+			</div>
+			<div class="subheader">subheader2</div>
+			<div class="subheader">subheader3</div>
+		</div>	
+		<div class="formDiv">
+			<form id="inquiryForm" method="post" action="#">
+				<div class="formPage" id="formPage1">
+					<div class="innerFormPage">
+						<!-- blank -->
+						<div class="parentFormComponent short"></div>
+						<!-- name -->
+						<div class="parentFormComponent">
+							<div class="fiftyPercent">
+								
+								<p>First Name</p>
+								<input class="formInput" type="text" name="fName" id="fName" placeholder="Enter Your First Name">
+							</div>
+							<div class="fiftyPercent">
+								<p>Last Name</p>
+								<input class="formInput" type="text" name="lName" id="lName" placeholder="Enter Your Last Name">
+							</div>
+						</div>
+						<!-- if corporte event -->
+						<div class="parentFormComponent">
+							<div class="fullLength">
+								<p>If corporate event, company name</p>
+								<input class="formInput" type="text" name="company" id="company" placeholder="Enter Name of Company Hosting Event">	
+							</div>
+								
+							
+						</div>
+						<!-- size / sector / title -->
+						<div class="parentFormComponent">
+							<div class="thirdsDiv">
+								<p>Size of Company</p>
+								<select class="formOption" name="companySize" id="companyOption">
+									<option disabled selected="selected" value="1">Select Company Size</option>
+									<option value="1">Value 1</option>
+									<option value="2">Value 2</option>
+									<option value="3">Value 3</option>
+									<option value="4">Value 4</option>	
+								</select>
+							</div>
+							<div class="thirdsDiv">
+								<p>Company Sector</p>
+								<select class="formOption" name="companySector" id="sectorOption">
+									<option disabled selected="selected" value="1">Select Sector</option>
+									<option value="1">Value 1</option>
+									<option value="2">Value 2</option>
+									<option value="3">Value 3</option>
+									<option value="4">Value 4</option>	
+								</select>
+							</div>
+							<div class="thirdsDiv">
+								<p>Title</p>
+								<input class="formInput" type="text" name="title" id="title" placeholder="Enter Your Title">	
+							</div>
+						</div>
+						<!-- email / email type -->
+						<div class="parentFormComponent">
+							<div class="sixtyPercent">
+								<p>Email</p>
+								<input class="formInput" type="text" name="email" id="email" placeholder="Enter Email">	
+							</div>
+							<div class="fourtyPercent">
+								<p>Email Type</p>
+								<select class="formOption" name="emailType" id="emailType">
+									<option value="1">Work</option>
+									<option value="2">Personal</option>
+								</select>
+								
+							</div>	
+						</div>
+						<!-- phone / phone type -->
+						<div class="parentFormComponent">
+							<div class="sixtyPercent">
+								<p>Phone Number</p>
+								<input class="formInput" type="number" name="phoneNumber" id="phoneNumber" placeholder="eg. 555-555-5555">	
+							</div>
+							<div class="fourtyPercent">
+								<p>Phone Type</p>
+								<select class="formOption" name="phoneType" id="phoneType">
+									<option value="1">Cell</option>
+									<option value="2">Home</option>
+									<option value="3">Office</option>
+								</select>
+								
+							</div>	
+						</div>
+						<!-- check here if you work at company -->
+						<div class="parentFormComponent short">
+							<div class="fullLength">
+								<span> <input type="checkbox" name="employee" value="isEmployee" checked="checked"> Check here if you work at the company hosting the event </span>
+							</div>
+						</div>
+						<!-- blank -->
+						<div class="parentFormComponent"></div>
+
+
+					</div>
+
+				</div>
+				<!-- Second Form Page -->
+				<div class="formPage" id="formPage2">
+					<div class="innerFormPage">
+						<!-- Blank -->
+						<div class="parentFormComponent"></div>
+						<!-- Event Name -->
+						<div class="parentFormComponent">
+							<div class="fullLength">
+								<p>Event Name</p>
+								<input class="formInput" type="text" name="eventName" id="eventName" placeholder="Enter event name e.g. Susan's 40th Birthday, Chase Inverstor Breakfast etc. ">
+							</div>
+						</div>
+						<!-- Event Date / Perferred Neighborhood -->
+						<div class="parentFormComponent tall">
+							<div class="fiftyPercent">
+								<p>Event Date</p>
+								<input class="formInput" placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="date">
+								<p> + Alternate Date </p>
+							</div>
+
+							<div class="fiftyPercent">
+							<p>Perferred Neighborhood</p>
+							 <select class="formOption" name="phoneType" id="phoneType">
+									<option disabled selected="selected" value="">Select Neighborhood</option>
+									<option value="1">Neighborhood A </option>
+									<option value="2">Neighborhood B </option>
+									<option value="3">Neighborhood C </option>
+								</select>
+								<p> + Alternate Neighborhood</p>
+							 </div>
+						</div>
+						<!-- Expected Number of Guests  -->
+						<div class="parentFormComponent">
+							<div class="fiftyPercent"> 
+								<p>Expected No. of Guests</p>
+								<input class="formInput sixtyPercentInput" placeholder="Min. No." class="textbox-n" type="text" onfocus="(this.type='number')"  id="minGuest"> 
+								<button>-</button>
+								<button>+</button>
+							</div>
+							<div class="fiftyPercent"> 
+								<p> &nbsp</p>
+								<input class="formInput sixtyPercentInput" placeholder="Max. No." class="textbox-n" type="text" onfocus="(this.type='number')"  id="maxGuest"> 
+								<button>-</button>
+								<button>+</button>
+							 </div>
+						</div>
+						<!-- Start Time -->
+						<div class="parentFormComponent">
+							<div class="fiftyPercent"> 
+							<p>Estimated Start Time </p>
+							<!-- Hours -->
+								<select class="formOption formOptionMedium" name="hours" id="hours">
+									<option disabled selected="selected" value=""> Hours </option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select> 
+							<!-- Minutes -->
+								<select class="formOption formOptionMedium" name="minutes" id="minutes">
+									<option disabled selected="selected" value="">Minutes</option>
+									<option value="1">00</option>
+									<option value="2">30</option>
+								</select> 
+							<!-- AM / PM --> 
+								<select class="formOption formOptionShort" name="amPM" id="amPM">
+									<option selected="selected" value=""> AM </option>
+									<option value="1"> PM </option>	
+								</select>
+
+							</div>
+							<div class="fiftyPercent"> 
+								<p>Duration</p>
+								<input class="formInput sixtyPercentInput" placeholder="duration" class="textbox-n" type="text" onfocus="(this.type='number')"  id="duration"> 
+								<button>-</button>
+								<button>+</button>
+							</div>
+						</div>
+						<!-- Flexability -->
+						<div class="parentFormComponent">
+							<div class="fiftyPercent"> 
+							<p>Start Time Flexability 
+								<span> <button>YES</button> <button>NO</button> </span>
+							</p>
+							</div>
+							<div class="fiftyPercent"> 
+							<p>Date Flexability 
+								<span> <button>YES</button> <button>NO</button> </span>
+							</p>
+							 </div>
+						</div>
+						<!-- Budget -->
+						<div class="parentFormComponent">
+							<div class="fullLength">
+								<p>Event Budget</p>
+								<p> Tell us about your budget for this event either per person or for the whole event.</p>
+								</div>
+						</div>
+						<!-- Per Guest -->
+						<div class="parentFormComponent short">
+							<div class="fourtyPercent">
+								<p><input type="radio" name="budget" value="perGuest" checked > Per Guest </div></p>
+							<div class="sixtyPercent">
+								<p><select class="formOption formOptionMedium" name="priceRange" id="priceRange">
+									<option disabled selected="selected" value=""> Select Price Range Per Guest </option>
+									<option value="1">1.00</option>
+									<option value="2">2.00</option>
+									<option value="3">3.00</option>
+								</select></p>
+							</div>
+						</div>
+						<!-- Total -->
+						<div class="parentFormComponent short">
+							<div class="fourtyPercent">
+								<p><input type="radio" name="budget" value="totalBudget" > Total Budget </p>
+							</div>
+							
+							<div class="sixtyPercent">
+								<p><input class="formInput" type="text" name="totalBudgetValue" id="totalBudgetValue" placeholder="e.g. $5000"></p>
+							</div>
+						</div>
+						<!-- Event Payment -->
+						<div class="parentFormComponent">
+							<div class="fullLength">
+								<p>Event Payment</p>
+								<p>How would you like addiotional charges on the day of be paid for?</p>
+							</div>
+						</div>
+						<div class="parentFormComponent">
+							<div class="fullLength">
+								<p><input type="radio" name="dayOfCharges" value="singlePayment" checked> Single event host will foot entire bill on credit card </p>
+								<p><input type="radio" name="dayOfCharges" value="splitPayment"> Split bill between multiple event host on more than one card </p>
+								
+							</div>
+						</div>
+						<div class="parentFormComponent"></div>
+					</div>
+
+				</div>
+				<!-- Third Form Page -->
+				<div class="formPage" id="formPage3">
+					<div class="innerFormPage">
+						<!-- Blank -->
+						<div class="parentFormComponent">
+							
+						</div>
+						<!-- Occasion / Event -->
+						<div class="parentFormComponent">
+							<div class="fiftyPercent">
+							<p>Occasion</p>	
+							<p><select class="formOption formOptionMedium" name="occasion" id="occasion">
+									<option disabled selected="selected" value=""> Select Occasion </option>
+									<option value="1">occasion a </option>
+									<option value="2">occasion b </option>
+									<option value="3">occasion c </option>
+								</select></p>
+								</div>
+							<div class="fiftyPercent">
+							<p>Event</p>	
+							<p><select class="formOption formOptionMedium" name="event" id="event">
+									<option disabled selected="selected" value=""> Select Event </option>
+									<option value="1">event a </option>
+									<option value="2">event b </option>
+									<option value="3">event c </option>
+								</select></p>
+							</div>
+						</div>
+						<!-- Privacy / Cuisine -->
+						<div class="parentFormComponent">
+							<div class="fiftyPercent">
+							<p>Privacy Level</p>	
+							<p><select class="formOption formOptionMedium" name="privacy" id="privacy">
+									<option disabled selected="selected" value=""> Select Privacy </option>
+									<option value="1">Privacy a </option>
+									<option value="2">Privacy b </option>
+									<option value="3">Privacy c </option>
+								</select></p>
+							</div>
+							<div class="fiftyPercent">
+							<p>Cuisine</p>	
+							<p><select class="formOption formOptionMedium" name="cuisine" id="cuisine">
+									<option disabled selected="selected" value=""> Select Cuisine </option>
+									<option value="1">Cuisine a </option>
+									<option value="2">Cuisine b </option>
+									<option value="3">Cuisine c </option>
+								</select></p>
+							</div>
+						</div>
+						<!-- Type of Bar -->
+						<div class="parentFormComponent">
+							<div class="fullLength">
+							<p>Type of Bar</p>
+							<span>
+								<input type="radio" name="barType" value="cashBar" checked > Cash Bar
+								<input type="radio" name="barType" value="openBar"> Open Bar
+								<input type="radio" name="barType" value="both"> Both
+								<input type="radio" name="barType" value="notApplicable"> Not Applicable
+							</span>
+							</div>
+						</div>
+						<!-- Amenities -->
+						<div class="parentFormComponent">
+							<div class="fullLength">
+							<p>Amenities</p>
+							<p>Select/Add all amenities you would absolutely need or like to have </p>
+							</div>
+						</div>
+						<!-- WiFi / Audio Video -->
+						<div class="parentFormComponent">
+							<div class="fiftyPercent">
+								<p>WiFi <span><input type="checkbox" name="WiFi" value="WiFi"></span></p>
+							</div>
+							<div class="fiftyPercent">
+								<p>Audio Visual <span><input type="checkbox" name="audioVisual" value="audioVisual"></span></p>
+							</div>
+						</div>
+						<!-- Coat Check / Restroom -->
+						<div class="parentFormComponent">
+							<div class="fiftyPercent">
+								<p>Private Coat Check <span><input type="checkbox" name="coatCheck" value="coatCheck"></span></p>
+							</div>
+							<div class="fiftyPercent"> 
+							<p>Private Restroom <span><input type="checkbox" name="restroom" value="restroom"></span></p>
+							</div>
+						</div>
+						<!-- Sound Sysyem / Microphone -->
+						<div class="parentFormComponent">
+							<div class="fiftyPercent">
+								<p>Sound System <span><input type="checkbox" name="soundSystem" value="soundSystem"></span></p>
+								+ Aditional Amenities
+							</div>
+							<div class="fiftyPercent">
+								<p>Microphone <span><input type="checkbox" name="microphone" value="microphone"></span></p>
+							</div>
+						</div>
+						<!-- Spceial Request -->
+						<div class="parentFormComponent">
+							<div class="fullLength">
+							<p>Is there anything we should know? Any Special Request? </p>
+							<textarea rows='3'>Enter any special requests or notes you would like us to keep in mind or make not of when recommeding venues.
+							</textarea>
+							</div>
+						</div>
+						<!-- How did you hear about PriveTable -->
+						<div class="parentFormComponent">
+							<div class="fullLength">
+							<p>How did you hear about PriveTable</p>	
+							<p><select class="formOption formOptionMedium" name="refferal" id="refferal">
+									<option disabled selected="selected" value=""> Select One </option>
+									<option value="1">Refereal a </option>
+									<option value="2">Refereal b </option>
+									<option value="3">Refereal c </option>
+								</select></p>
+								
+							</div>
+						</div>
+						<!-- blank -->
+						<div class="parentFormComponent"></div>
+
+
+					</div>
+
+				</div>
+			</form>
+		</div>
+	
+	<div class="buttonContainer">
+		<div class="button1">Back</div>
+		<div class="button2">Next</div>
+	</div>
+
+
+
+
+
+
+
+<!-- JQuery -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<script src="./script.js"></script>	
+</body>
+</html>
