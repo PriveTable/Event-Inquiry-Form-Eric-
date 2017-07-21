@@ -32,11 +32,12 @@ textarea {
 }
 .subheader {
 	width:100%;
-	border:solid blue 1px;
-	height: 370px;
+	/*border:solid blue 1px;*/
+	min-height: 150px;
+	margin-top:1px;
 	/*opacity: 0.09;*/
-	/*background-color: #2c490a;*/
-	border: solid 1px #ddc179;
+	background-color: rgba(44,73,10, .09)
+	/*border: solid 1px #ddc179;*/
 }
 .formPage {
 	width:100%;
@@ -160,36 +161,84 @@ textarea, input, button, select {
 	width:15%;
 }
 
-/* subheader 1 */
-.progressContainer{
+/* subheader */
+.progressComponent{
 	display:flex;
 	justify-content: center;
 	align-items: center;
 	width:500px;
-	border: solid red 1px;
+	/*border: solid red 1px;*/
 	width:100%;
-	height:100px;
+	min-height:75px;
 }
 .circle {
 	display:flex;
-	border:solid blue 1px;
+	border:solid #a38a4a 3.9px;
 	height: 70px;
 	width:70px;
 	border-radius:100%;
 	justify-content:center;
 	align-items:center;
-
+	font-size: 32.6
+	/*background-color: #a38a4a;*/
+}
+.circle p {
+	font-size: 36px;
+	color:#a38a4a;
 }
 .line {
-	width:100px;
+	width:220px;
 	height: 0px;
-	
-	border:solid green 1px;
+	border:solid #d9d9d9 2px;
 	border-top:none;
 
 }
+.instructions {
+	padding-bottom:40px;
+}
+.instructions p {
+	font-size: 24px;
+	color: #2c490a;
+	letter-spacing:1px;
+}
+
+/* subheader 1*/
+#circle1_1 {
+	background-color: #a38a4a;
+}
+#circle1_1 p {
+	color:white;
+}
+#tellUsMore {
+	margin: 0 auto;
+	width:85%;
+	text-align: center;
+	letter-spacing:1px;
+	margin-bottom: 30px;
+}
+#tellUsMore p {
+	font-size: 20px;
+	color:#9b9b9b;
+}
+.bottomMargin {
+	margin-bottom:15px;
+}
+
 /* subheader 2*/
+#circle2_1 p, #circle2_2 p {
+	color:white;
+}
+#circle2_1, #circle2_2  {
+	background-color: #a38a4a;
+}
 /* subheader 3*/
+#circle3_1 p, #circle3_2 p, #circle3_3 p {
+	color:white;
+}
+#circle3_1, #circle3_2, #circle3_3 {
+	background-color: #a38a4a;
+}
+
 
 
 
