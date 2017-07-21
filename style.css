@@ -25,10 +25,12 @@ textarea {
 }
 .header {
 	width:100%;
-	border:solid blue 1px;
-	height: 515px;
-	opacity: 0.28;
+	/*border:solid blue 1px;*/
+	min-height: 430px;
 	background-color: #a38a4a;
+	background-image: url('./assets/bell.png');
+	background-size: cover;
+
 }
 .subheader {
 	width:100%;
@@ -41,12 +43,12 @@ textarea {
 }
 .formPage {
 	width:100%;
-	border:solid blue 1px;
+	/*border:solid blue 1px;*/
 	min-height:725px;
 
 }
 .innerFormPage {
-	border:solid blue 3px;
+	/*border:solid blue 3px;*/
 	width:741px;
 	height:100%;
 	margin: 0 auto;
@@ -57,7 +59,7 @@ textarea {
 /* parent for all form lines*/
 .parentFormComponent{
 	display:flex;
-	border: solid red 1px;
+	/*border: solid red 1px;*/
 	width:100%;
 	height:100px;
 }
@@ -65,15 +67,48 @@ textarea {
 	display:flex;
 	width:100%;
 	height: 57px;
-	border:solid blue 1px;
+	/*border:solid blue 1px;*/
 }
 .button1 {
-	border: solid blue 1px;
+	cursor:pointer;
+	user-select:none;
+	/*border: solid blue 1px;*/
+	display:flex;
+	flex-direction: column;
+	height:100%;
 	width:50%;
+	box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.16);
+	transition:.3s;
+	/*align-self: center;*/
 }
-.button2 {
-	border: solid blue 1px;
+
+.button1:hover {
+	/*border: solid blue 1px;*/
 	width:50%;
+	box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.2);
+	transition:.3s;
+}
+.button1 p {
+	text-align:center;
+}
+
+.button2 {
+	cursor:pointer;
+	user-select:none;
+	display:flex;
+	flex-direction: column;
+	/*border: solid blue 1px;*/
+	width:50%;
+	height:100%;
+	background-color:#a38a4a;
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.16);
+	transition:.3s;
+}
+.button2:hover {
+	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.3); 
+}
+.button2 p {
+	text-align:center;
 }
 /* form div heights */
 .short {
@@ -91,14 +126,14 @@ textarea {
 
 /* form div widths */
 .fiftyPercent{
-	border:solid green 1px;
+	/*border:solid green 1px;*/
 	width:50%;
 	height:100%;
 	padding-left: 5px;
 	padding-right: 5px;
 }
 .thirdsDiv {
-	border:solid green 1px;
+	/*border:solid green 1px;*/
 	margin:0 auto;
 	height:100%;
 	width:33%;
@@ -106,14 +141,14 @@ textarea {
 	padding-right: 5px;
 }
 .sixtyPercent {
-	border:solid green 1px;
+	/*border:solid green 1px;*/
 	height:100%;
 	width:60%;
 	padding-left: 5px;
 	padding-right: 5px;
 }
 .fourtyPercent {
-	border:solid green 1px;
+	/*border:solid green 1px;*/
 	height:100%;
 	width:40%;
 	padding-left: 5px;
@@ -124,7 +159,7 @@ textarea {
 	height:100%;
 	padding-left: 5px;
 	padding-right: 5px;
-	border: solid green 1px;
+	/*border: solid green 1px;*/
 }
 /* input */
 textarea, input, button, select { 
