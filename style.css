@@ -32,13 +32,17 @@ textarea {
 	background-size: cover;
 
 }
+.subheaderParentDiv {
+	background-color: rgba(44,73,10, .09)
+
+}
 .subheader {
 	width:100%;
 	/*border:solid blue 1px;*/
 	min-height: 150px;
 	margin-top:1px;
 	/*opacity: 0.09;*/
-	background-color: rgba(44,73,10, .09)
+	/*background-color: rgba(44,73,10, .09)*/
 	/*border: solid 1px #ddc179;*/
 }
 .formPage {
@@ -69,7 +73,7 @@ textarea {
 	height: 57px;
 	/*border:solid blue 1px;*/
 }
-.button1 {
+#backButton{
 	cursor:pointer;
 	user-select:none;
 	/*border: solid blue 1px;*/
@@ -82,17 +86,17 @@ textarea {
 	/*align-self: center;*/
 }
 
-.button1:hover {
+#backButton:hover {
 	/*border: solid blue 1px;*/
 	width:50%;
 	box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.2);
 	transition:.3s;
 }
-.button1 p {
+#backButton p {
 	text-align:center;
 }
 
-.button2 {
+#nextButton {
 	cursor:pointer;
 	user-select:none;
 	display:flex;
@@ -104,10 +108,10 @@ textarea {
 	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.16);
 	transition:.3s;
 }
-.button2:hover {
+#nextButton:hover {
 	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.3); 
 }
-.button2 p {
+#nextButton p {
 	text-align:center;
 }
 /* form div heights */

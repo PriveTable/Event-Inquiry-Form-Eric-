@@ -21,7 +21,7 @@
 	<div class="nav">nav</div>
 	<div class="header"></div>
 		<!-- Sub Headers -->
-		<div class="subheaderComponent">
+		<div id="subheaderParentDivId" class="subheaderParentDiv">
 			<div id="subheader1" class="subheader">
 				<!-- Blank -->
 				<div class="short"></div>
@@ -215,15 +215,15 @@
 						<div class="parentFormComponent">
 							<div class="fiftyPercent"> 
 								<p>Expected No. of Guests</p>
-								<input class="formInput sixtyPercentInput" placeholder="Min. No." class="textbox-n" type="text" onfocus="(this.type='number')"  id="minGuest"> 
-								<button>-</button>
-								<button>+</button>
+								<input id="expectedGuestMinInput" class="formInput sixtyPercentInput" placeholder="Min. No." class="textbox-n" type="text" onfocus="(this.type='number')"  id="minGuest"> 
+								<button id="expectedGuestMinMinus" type="button">-</button>
+								<button id="expectedGuestMinPlus" type="button">+</button>
 							</div>
 							<div class="fiftyPercent"> 
 								<p> &nbsp</p>
-								<input class="formInput sixtyPercentInput" placeholder="Max. No." class="textbox-n" type="text" onfocus="(this.type='number')"  id="maxGuest"> 
-								<button>-</button>
-								<button>+</button>
+								<input id="expectedGuestMaxInput"class="formInput sixtyPercentInput" placeholder="Max. No." class="textbox-n" type="text" onfocus="(this.type='number')"  id="maxGuest"> 
+								<button id="expectedGuestMaxMinus" type="button">-</button>
+								<button id="expectedGuestMaxPlus" type="button">+</button>
 							 </div>
 						</div>
 						<!-- Start Time -->
@@ -253,20 +253,20 @@
 							<div class="fiftyPercent"> 
 								<p>Duration</p>
 								<input class="formInput sixtyPercentInput" placeholder="duration" class="textbox-n" type="text" onfocus="(this.type='number')"  id="duration"> 
-								<button>-</button>
-								<button>+</button>
+								<button type="button">-</button>
+								<button type="button">+</button>
 							</div>
 						</div>
 						<!-- Flexability -->
 						<div class="parentFormComponent">
 							<div class="fiftyPercent"> 
 							<p>Start Time Flexability 
-								<span> <button>YES</button> <button>NO</button> </span>
+								<span> <button type="button">YES</button> <button type="button">NO</button> </span>
 							</p>
 							</div>
 							<div class="fiftyPercent"> 
 							<p>Date Flexability 
-								<span> <button>YES</button> <button>NO</button> </span>
+								<span> <button type="button">YES</button> <button type="button">NO</button> </span>
 							</p>
 							 </div>
 						</div>
@@ -446,8 +446,8 @@
 		</div>
 	
 	<div class="buttonContainer">
-		<div class="button1"><p>Back</p></div>
-		<div class="button2"><p>Next</p></div>
+		<div id="backButton"><p>Back</p></div>
+		<div id="nextButton"><p>Next</p></div>
 	</div>
 
 
