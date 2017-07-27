@@ -30,6 +30,9 @@ $(document).ready(()=>{
 	let incrementMaxGuests = $('#expectedGuestMaxPlus');
 	let decrementMaxGuests = $('#expectedGuestMaxMinus');
 
+	/*amenities*/
+	let amenitiesButton = $('#amenitiesButton')
+
 
 
 	/* Smooth scroll */
@@ -120,6 +123,22 @@ $(document).ready(()=>{
 		// console.log('this is counter value ' + counter);
 	});
 
+	/* Increase / Decrease size of Amenities Div */
+	seeAmenities = true;
+
+	amenitiesButton.on('click', () => {
+		if (seeAmenities === true) {
+			document.getElementById('amenities').className = "amenitiesOpen"	
+			seeAmenities = false;
+			document.getElementById('AmenitiesButtonText').innerHTML = "Hide Amenities"
+			console.log ('false')
+		} else if (seeAmenities === false) {
+			document.getElementById('amenities').className = "amenitiesCollapse"
+			document.getElementById('AmenitiesButtonText').innerHTML = "Show Amenities"
+			seeAmenities = true;
+			console.log ('true')
+		}
+	});
 
 
 	/* Increment Min guest value*/
@@ -144,7 +163,6 @@ $(document).ready(()=>{
 	let maxGuestsValue = 0;
 
 	incrementMaxGuests.on('click', () => {
-		
 		maxGuestsValue += 5;
 		/*expectedNumberofGuestMin();*/
 		document.getElementById('expectedGuestMaxInput').value = maxGuestsValue;
