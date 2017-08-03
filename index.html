@@ -95,10 +95,10 @@
 						<!-- blank -->
 						<div class="parentFormComponent short"></div>
 						<!-- name -->
-						<div class="parentFormComponent">
+						<div class="input-field parentFormComponent">
 							<div class="fiftyPercent">
 								
-								<p class="inputTitle " >First Name</p>
+								<p class=" inputTitle " >First Name</p>
 								<input class="formInput " type="text" name="fName" id="fName" placeholder="Enter Your First Name">
 							</div>
 							<div class="fiftyPercent">
@@ -107,7 +107,7 @@
 							</div>
 						</div>
 						<!-- if corporte event -->
-						<div class="parentFormComponent">
+						<div class="input-field  parentFormComponent">
 							<div class="fullLength">
 								<p class="inputTitle" >If corporate event, company name</p>
 								<input class="formInput" type="text" name="company" id="company" placeholder="Enter Name of Company Hosting Event">	
@@ -116,7 +116,7 @@
 							
 						</div>
 						<!-- size / sector / title -->
-						<div class="parentFormComponent">
+						<div class="input-field parentFormComponent">
 							<div class="thirdsDiv">
 								<p class="inputTitle">Size of Company</p>
 								<select class="formOption" name="companySize" id="companyOption">
@@ -163,7 +163,7 @@
 							</div>
 						</div>
 						<!-- email / email type -->
-						<div class="parentFormComponent">
+						<div class="input-field  parentFormComponent">
 							<div class="sixtyPercent">
 								<p class="inputTitle">E-mail</p>
 								<input class="formInput" type="text" name="email" id="email" placeholder="Enter Email">	
@@ -178,7 +178,7 @@
 							</div>	
 						</div>
 						<!-- phone / phone type -->
-						<div class="parentFormComponent">
+						<div class="input-field parentFormComponent">
 							<div class="sixtyPercent">
 								<p class="inputTitle">Phone Number</p>
 								<input class="formInput" type="number" name="phoneNumber" id="phoneNumber" placeholder="eg. 555-555-5555">	
@@ -201,7 +201,6 @@
 										type="checkbox" 
 										name="employee" 
 										value="isEmployee" 
-										checked="checked"
 										id="employee">
 										<label for="employee">Check here if you work at the company hosting the event </label> 
 								</span>
@@ -223,7 +222,7 @@
 						<div class="parentFormComponent">
 							<div class="fullLength">
 								<p class="inputTitle">Event Name</p>
-								<input class="formInput" type="text" name="eventName" id="eventName" placeholder="Enter event name e.g. Susan's 40th Birthday, Chase Inverstor Breakfast etc. ">
+								<input class="formInput" type="text" name="eventName" id="eventName" placeholder="Enter event name e.g. Susan's 40th Birthday, Chase Investor Breakfast etc. ">
 							</div>
 						</div>
 						<!-- Event Date / Perferred Neighborhood -->
@@ -342,7 +341,7 @@
 									<input class="formInput sixtyPercentInput" placeholder="duration" class="textbox-n" type="text" onfocus="(this.type='number')"  id="duration"> 
 								</div>
 								
-								<div id="whhhhyy">
+								<div id="durationButtonDiv">
 									<button type="button">-</button>
 									<button type="button">+</button>
 								</div>
@@ -351,16 +350,6 @@
 							</div>
 						</div>
 
-						<div class="parentFormComponent">
-						</div>
-						<div class="parentFormComponent">
-						</div>
-
-						<div class="parentFormComponent">
-							
-							
-
-						</div>
 
 						<div class="parentFormComponent">
 						</div>
@@ -371,21 +360,46 @@
 						<div class="parentFormComponent">
 							<div class="fiftyPercent"> 
 							<p class="inputTitle">Start Time Flexability 
-								<span> <button type="button">YES</button> <button type="button">NO</button> </span>
+								<span> 
+									<input
+										class="with-gap" 
+										type="radio" 
+										name="time-flexability" 
+										value="yes"
+										id="time-flexability-yes">
+										<label for="time-flexability-yes">YES</label>
+									</input> 
+									<input 
+										class="with-gap"
+										type="radio" 
+										name="time-flexability" 
+										value="no"
+										id="time-flexability-no"
+										checked="checked">
+										<label for="time-flexability-no">NO</label>
+									</input> 
+								</span>
 							</p>
 							</div>
 							<div class="fiftyPercent"> 
 							<p class="inputTitle">Date Flexability 
 								<span> 
-									<input 
+									<input
+										class="with-gap" 
 										type="radio" 
-										name="date_flexability" 
-										value="yes">YES
+										name="date-flexability" 
+										value="yes"
+										id="date-flexability-yes">
+										<label for="date-flexability-yes">YES</label>
 									</input> 
 									<input 
+										class="with-gap"
 										type="radio" 
-										name="date_flexability" 
-										value="no">NO
+										name="date-flexability" 
+										value="no"
+										id="date-flexability-no"
+										checked="checked">
+										<label for="date-flexability-no">NO</label>
 									</input> 
 								</span>
 							</p>
@@ -400,28 +414,50 @@
 						</div>
 						<!-- Per Guest -->
 						<div class="parentFormComponent short">
-							<div class="fourtyPercent">
-								<p><input type="radio" name="budget" value="perGuest" checked > Per Guest </div></p>
-							<div class="sixtyPercent">
-								<p><select class="formOption formOptionMedium" name="priceRange" id="priceRange">
-									<option disabled selected="selected" value=""> Select Price Range Per Guest </option>
+							<div id="perGuestDiv" class="fourtyPercent">
+								
+
+									<input  
+											class="with-gap"
+											type="radio" 
+											name="budget" 
+											value="perGuest" 
+											checked 
+											id="perGuest">
+										<label for="perGuest"> Per Guest </label>  
+							</div>
+							<div class="sixtyPercent short">
+								<select class="formOption " name="priceRange" id="priceRange">
+									<option disabled selected="selected" value="">Select Price Range Per Guest </option>
 									<option value="50">50.00</option>
 									<option value="75">75.00</option>
 									<option value="100">100.00</option>
 									<option value="150">150.00</option>
 									<option value="200">200.00</option>
 									<option value="300">300.00 +</option>
-								</select></p>
+								</select>
 							</div>
 						</div>
 						<!-- Total -->
 						<div class="parentFormComponent short">
-							<div class="fourtyPercent">
-								<p><input type="radio" name="budget" value="totalBudget" > Total Budget </p>
+							<div id="totalBudgetDiv" class="fourtyPercent">
+								
+									<input 
+										class="with-gap"
+										type="radio" 
+										name="budget" 
+										value="totalBudget"
+										id="totalBudget">
+										<label for="totalBudget"> Total Budget </label> 
 							</div>
 							
 							<div class="sixtyPercent">
-								<p><input class="formInput" type="text" name="totalBudgetValue" id="totalBudgetValue" placeholder="e.g. $5000"></p>
+									<input 
+										class="formInput" 
+										type="text" 
+										name="totalBudgetValue" 
+										id="totalBudgetValue" 
+										placeholder="e.g. $5000">
 							</div>
 						</div>
 						<!-- Event Payment -->
@@ -470,7 +506,7 @@
 						<div class="parentFormComponent">
 							<div class="fiftyPercent">
 							<p class="inputTitle">Occasion</p>	
-							<p><select class="formOption formOptionMedium" name="occasion" id="occasion">
+							<p><select class="formOption" name="occasion" id="occasion">
 									<option disabled selected="selected" value=""> Select Occasion </option>
 									<option value="1">occasion a </option>
 									<option value="2">occasion b </option>
@@ -479,7 +515,7 @@
 								</div>
 							<div class="fiftyPercent">
 							<p class="inputTitle">Event</p>	
-							<p><select class="formOption formOptionMedium" name="event" id="event">
+							<p><select class="formOption" name="event" id="event">
 									<option disabled selected="selected" value=""> Select Event </option>
 									<option value="1">event a </option>
 									<option value="2">event b </option>
@@ -491,7 +527,7 @@
 						<div class="parentFormComponent">
 							<div class="fiftyPercent">
 							<p class="inputTitle">Privacy Level</p>	
-							<p><select class="formOption formOptionMedium" name="privacy" id="privacy">
+							<p><select class="formOption" name="privacy" id="privacy">
 									<option disabled selected="selected" value=""> Select Privacy </option>
 									<option value="1">Privacy a </option>
 									<option value="2">Privacy b </option>
@@ -500,7 +536,7 @@
 							</div>
 							<div class="fiftyPercent">
 							<p class="inputTitle">Cuisine</p>	
-							<p><select class="formOption formOptionMedium" name="cuisine" id="cuisine">
+							<p><select class="formOption" name="cuisine" id="cuisine">
 									<option disabled selected="selected" value=""> Select Cuisine </option>
 										<option value="3">American</option>
 										<option value="3">Argentinian</option>
@@ -636,8 +672,8 @@
 						</div>
 						<div id="amenities" class="amenitiesCollapse">
 						<!-- WiFi / Audio Video -->
-							<div class="parentFormComponent">
-								<div class="fiftyPercent short">
+							<div class="parentFormComponent short">
+								<div class="fiftyPercent">
 									<p>
 										<span>
 											<input 
@@ -649,7 +685,7 @@
 										</span>
 									</p>
 								</div>
-								<div class="short fiftyPercent">
+								<div class="fiftyPercent">
 									<p> 
 										<span>
 											<input 
@@ -663,8 +699,8 @@
 								</div>
 							</div>
 							<!-- Coat Check / Restroom -->
-							<div class="parentFormComponent">
-								<div class="short fiftyPercent">
+							<div class="parentFormComponent short">
+								<div class="fiftyPercent">
 									<p>
 										<span>
 											<input 
@@ -690,7 +726,7 @@
 								</div>
 							</div>
 							<!-- Sound Sysyem / Microphone -->
-							<div class="parentFormComponent">
+							<div class="parentFormComponent short">
 								<div class="fiftyPercent">
 									<p>
 										<span>
@@ -723,8 +759,10 @@
 						<div class="parentFormComponent">
 							<div class="input-field fullLength ">
 							<p class="inputTitle">Is there anything we should know? Any Special Request? </p>
-							<textarea rows='3'>Enter any special requests or notes you would like us to keep in mind or make not of when recommending venues.
-							</textarea>
+							<textarea 
+								rows='3'
+								placeholder="Enter any special requests or notes you would like us to keep in mind or make when recommending venues. Include food allergies or dietary restrictions." 
+								></textarea>
 							</div>
 						</div>
 						<!-- How did you hear about PriveTable -->

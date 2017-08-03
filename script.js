@@ -45,37 +45,37 @@ $(document).ready(()=>{
 	/* functionality for NEXT and BACK buttons */
 	function checkCounter () {
 		if (counter === 0 ) {
-			/*subheader1.css("display","inline");
+			subheader1.css("display","inline");
 			subheader2.css("display","none");
 			subheader3.css("display","none");
 
 			formPage1.css("display","inline");
 			formPage2.css("display","none");
-			formPage3.css("display","none");*/
+			formPage3.css("display","none");
 
 			scrollUp();
 			
 			console.log(`counter value 0 = ${counter}`)
 		} else if (counter === 1) {
-			/*subheader1.css("display","none");
+			subheader1.css("display","none");
 			subheader2.css("display","inline");
 			subheader3.css("display","none");
 			
 			formPage1.css("display","none");
 			formPage2.css("display","inline");
-			formPage3.css("display","none");*/
+			formPage3.css("display","none");
 
 			scrollUp();
 
 			console.log(`counter value 1 = ${counter}`)
 		} else if (counter === 2) {
-			/*subheader1.css("display","none");
+			subheader1.css("display","none");
 			subheader2.css("display","none");
 			subheader3.css("display","inline");
 
 			formPage1.css("display","none");
 			formPage2.css("display","none");
-			formPage3.css("display","inline");*/
+			formPage3.css("display","inline");
 
 			scrollUp();
 
