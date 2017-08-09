@@ -141,7 +141,7 @@ textarea {
 	height:45px;
 }
 .medium {
-
+	height:65px;
 }
 .tall {
 	height: 120px;
@@ -399,6 +399,7 @@ textarea, input, button, select {
 
 /* Change Materialize CSS */
 
+/* INPUT */
 .input-field :focus {
 	border-bottom: 1px solid #a38a4a!important;
 	box-shadow: 0 1px 0 0 #a38a4a!important;
@@ -408,10 +409,36 @@ textarea, input, button, select {
 	/* Over write above input box shadow*/
 	box-shadow: 0 0 0 0 #a38a4a!important;
 }
+/* OPTION DROP DOWN */
 .dropdown-content li > a, .dropdown-content li > span {
 	color: #a38a4a!important;
 }
+/* RADIO BUTTONS*/
+[type="radio"].with-gap:checked + label:before {
+border-radius: 50%;
+border: 2px solid #a38a4a!important; }
+
+[type="radio"].with-gap:checked + label:after {
+border-radius: 50%;
+border: 2px solid #a38a4a!important;
+background-color: #a38a4a!important;
+z-index: 0;
+-webkit-transform: scale(.5);
+-moz-transform: scale(.5);
+-ms-transform: scale(.5);
+-o-transform: scale(.5);
+transform: scale(.5); }
+
+/* Check box */
+.checkbox-gold[type="checkbox"].filled-in:checked + label:after{
+     border: 2px solid #a38a4a!important;
+     background-color: #a38a4a!important;
+}
 
 
+/* BUTTON */
+button {
+	
+}
 
 
