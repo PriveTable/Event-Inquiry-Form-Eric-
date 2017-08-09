@@ -213,20 +213,21 @@
 					</div>
 
 				</div>
+				
 				<!-- Second Form Page -->
 				<div class="formPage" id="formPage2">
 					<div class="innerFormPage">
 						<!-- Blank -->
 						<div class="parentFormComponent"></div>
 						<!-- Event Name -->
-						<div class="parentFormComponent">
+						<div class="input-field parentFormComponent">
 							<div class="fullLength">
 								<p class="inputTitle">Event Name</p>
 								<input class="formInput" type="text" name="eventName" id="eventName" placeholder="Enter event name e.g. Susan's 40th Birthday, Chase Investor Breakfast etc. ">
 							</div>
 						</div>
 						<!-- Event Date / Perferred Neighborhood -->
-						<div class="parentFormComponent tall">
+						<div class="input-field parentFormComponent tall">
 							<div class="fiftyPercent">
 								<p class="inputTitle">Event Date</p>
 								<input class="formInput" placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')"  id="date">
@@ -275,7 +276,7 @@
 							 </div>
 						</div>
 						<!-- Expected Number of Guests  -->
-						<div class="parentFormComponent">
+						<div class="input-field parentFormComponent">
 							<div class="fiftyPercent"> 
 								<p class="inputTitle">Expected No. of Guests</p>
 								<input id="expectedGuestMinInput" class="formInput sixtyPercentInput" placeholder="Min. No." class="textbox-n" type="text" onfocus="(this.type='number')"  id="minGuest"> 
@@ -294,15 +295,24 @@
 
 
 						<!-- Start Time -->
-						<div class="parentFormComponent">
+						<div  class="parentFormComponent short">
+							<div id="startTimeLabelDiv" class="fiftyPercent">
+							<p class="inputTitle">Estimated Start Time </p>
+								
+							</div>
+							<div id="durationLabelDiv"class="fiftyPercent">
+								<p class="inputTitle">Duration</p>
+							</div>
 						</div>	
 
-						<div class="parentFormComponent">
+						<div class="input-field parentFormComponent">
 							<div id="timeDiv" class="input-field fullLength"> 
 								
 								<!-- <p class="inputTitle">Estimated Start Time </p> -->
 								<!-- Hours -->
+								
 								<div id="hoursDiv">
+
 								 	<select class=" " name="hours" id="hours">
 										<option disabled selected="selected" value=""> Hour </option>
 										<option value="1">1</option>
@@ -341,26 +351,25 @@
 									<input class="formInput sixtyPercentInput" placeholder="duration" class="textbox-n" type="text" onfocus="(this.type='number')"  id="duration"> 
 								</div>
 								
-								<div id="durationButtonDiv">
+								<!-- <div id="durationButtonDiv">
 									<button type="button">-</button>
 									<button type="button">+</button>
-								</div>
+								</div> -->
 								</div>
 
 							</div>
 						</div>
 
 
-						<div class="parentFormComponent">
-						</div>
+		
 						
 
 
 						<!-- Flexability -->
 						<div class="parentFormComponent">
 							<div class="fiftyPercent"> 
-							<p class="inputTitle">Start Time Flexability 
-								<span> 
+							<p class="inputTitle">Start Time Flexability </p>
+							<br>
 									<input
 										class="with-gap" 
 										type="radio" 
@@ -378,12 +387,12 @@
 										checked="checked">
 										<label for="time-flexability-no">NO</label>
 									</input> 
-								</span>
-							</p>
+								
+							
 							</div>
 							<div class="fiftyPercent"> 
-							<p class="inputTitle">Date Flexability 
-								<span> 
+							<p class="inputTitle">Date Flexability </p>
+							<br>
 									<input
 										class="with-gap" 
 										type="radio" 
@@ -401,19 +410,17 @@
 										checked="checked">
 										<label for="date-flexability-no">NO</label>
 									</input> 
-								</span>
-							</p>
 							 </div>
 						</div>
 						<!-- Budget -->
-						<div class="parentFormComponent">
+						<div class="input-field parentFormComponent">
 							<div class="fullLength">
 								<p class="inputTitle">Event Budget</p>
-								<p> Tell us about your budget for this event either per person or for the whole event.</p>
+								<span> Tell us about your budget for this event either per person or for the whole event.</span>
 								</div>
 						</div>
 						<!-- Per Guest -->
-						<div class="parentFormComponent short">
+						<div class="input-field parentFormComponent short">
 							<div id="perGuestDiv" class="fourtyPercent">
 								
 
@@ -439,7 +446,7 @@
 							</div>
 						</div>
 						<!-- Total -->
-						<div class="parentFormComponent short">
+						<div class="input-field parentFormComponent short">
 							<div id="totalBudgetDiv" class="fourtyPercent">
 								
 									<input 
@@ -461,13 +468,13 @@
 							</div>
 						</div>
 						<!-- Event Payment -->
-						<div class="parentFormComponent">
+						<div class="input-field parentFormComponent">
 							<div class="fullLength">
 								<p class="inputTitle" >Event Payment</p>
-								<p>How would you like additional charges on the day of be paid for?</p>
+								<span>How would you like additional charges on the day of be paid for?</span>
 							</div>
 						</div>
-						<div class="parentFormComponent">
+						<div class="input-field parentFormComponent">
 							<div class="fullLength">
 								<p>
 									<input 
