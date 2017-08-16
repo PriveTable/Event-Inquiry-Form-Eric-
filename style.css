@@ -206,6 +206,11 @@ textarea, input, button, select {
 	width:80%;
 
 }
+/* black text for option select */
+.blackText {
+	color: black!important;
+}
+
 
 /* form page 1 */
 #companyName {
@@ -441,4 +446,25 @@ button {
 	
 }
 
+.select-dropdown {
+	color:rgba(158,158,158,.5);
 
+}
+
+
+
+/* code from inbase to change dropdown arrows */
+/*
+.material .material-select > label strong{
+    border-color: lightgray transparent transparent transparent!important;
+    border-style: solid!important; 
+    border-width: 6px 5px 0 5px!important;
+    background-image:url('../assets/arrow.png')!important;
+ background-repeat:no-repeat!important;       
+    margin-top: -3px!important;
+    width: 20px!important;
+    height: 18px!important;
+    position: absolute!important;
+    right:0;top:50%!important;
+}
+*/

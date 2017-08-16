@@ -1,6 +1,6 @@
 $(document).ready(()=>{
 	/*functions to run immediately */
-	
+	/* enable material select */
 	$('select').material_select();
 	/*VARIABLES*/
 
@@ -32,6 +32,13 @@ $(document).ready(()=>{
 
 	/*amenities*/
 	let amenitiesButton = $('#amenitiesButton')
+
+	/*select dropdown */
+	let select = $('.select-dropdown')
+	
+	/* drop down caret */
+/*	let caret = $('.select-wrapper').find('.caret').html()
+*/	let caret = $('.select-wrapper').find('.caret')
 
 
 
@@ -175,8 +182,20 @@ $(document).ready(()=>{
 		expectedNumberofGuestMax();
 	});
 
+	/* Change color of option when a selection is made */
+	
+	/* immdiately invoke color change lightgray */
+	/*(function colorDropdown(){
+		$(select).css('color','rgba(158,158,158,.5)')
+	})();*/
 
+	$(document).on('change', select, (event)=> {
+		$(event.target).parent().find('.select-dropdown').css('color', 'black')
+	});
 
+	/* Change caret */
+	$(caret).html('<img src="./assets/arrow.png" width="50%" height="100%" ></img> ')
+	console.log(caret.html())
 
 
 
